@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://stbmydp4:Stbmydp12@cluster0.awtdw.mongodb.net/Ap
   .catch((error) => console.error('Error al conectar a MongoDB Atlas:', error));
 
 // Rutas
-app.use('/api', saleRoutes);
+app.use('/api/ventas', saleRoutes);
 
 // Iniciar servidor
 const PORT = process.env.PORT || 3000; // Permite usar un puerto dinámico (útil para despliegues)
